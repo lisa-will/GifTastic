@@ -18,9 +18,16 @@ h3 {
 	font-size: 28px;
 
 }
- 
+
+p {
+	font-family: 'Metrophobic', sans-serif;
+	margin-bottom: 3px;
+	font-size: 15px;
+} 
+
 button.emo {
 	font-family: 'Metrophobic', sans-serif;
+	font-size: 13px;
 }
 
 label {
