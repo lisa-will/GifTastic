@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Giftastic!</title>
+
+	<!-- css links --> 
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- bootstrap link 
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css"> -->
+
+	<!-- google fonts link --> 
+	<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Bungee+Shade|Metrophobic" rel="stylesheet">
+
+
+	<!-- font awesome link -->
+	<script src="https://use.fontawesome.com/64485c0271.js"></script>
+
+
+</head>
+<body>
+	
+<div class="container">
+	<!-- header --> 
+	<h1>You're full of <i class="fa fa-hashtag" aria-hidden="true"></i> EMOTIONS gif search!</h1>
+	<h3>the one-stop-shop of life's emotions that are totally gif-worthy.</h3>
+	
+	<!-- buttons buttons buttons -->
+	<div id="buttonsView"></div>
+
+	<form id="emo-form"></form>
+			<label for="emo-input">How are you feeling today?</label>
+			<input type="text" id="emo-input"><br>
+			<input id="addEmo" type="submit" value="Add Emotion">
+			<!-- Add smile to button.. --> 
+			<i class="fa fa-smile-o" aria-hidden="true"></i>
+	</form>
+			
+</div>
+<!-- gifContainer -->
+<div class="gifsContainer">
+	<div id="emoView"></div>
+</div>
+
+
+<!-- script links --> 
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="assets/javascript/app.js"></script>
+
+</body>
+</html>
