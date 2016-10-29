@@ -1,7 +1,7 @@
 // Emotional variables. 
 var emotions = ["Happy", "Sad", "Sassy", "Hangry", "Frustrated", "Loved", "Excited", "Bored", "Sleepy", "Awkward", "Mind Blown", "Silly"];
 
-// this function pulls the images using the giphyapi key + emotions index + limits results to 10! 
+// This function pulls the images using the giphyapi key + emotions index + limits results to 10! 
 function displayInfo (){
 		$('emoView').empty();
 		var emo = $(this).attr("data-name");
@@ -24,12 +24,12 @@ function displayInfo (){
 						var rating = results[i].rating;
 						var p = $('<p>').text("Rating: " + rating);
 
-						var emoImage = $('<img>');
+						var emoImage = $('<img class="gifImage">');
 						emoImage.attr({
-							src: results[i].images.fixed_height.url,
-							//"data-still": results[i].images.fixed_height_still.url,
+							src: results[i].images.fixed_height_still.url,
+							"data-still": results[i].images.fixed_height_still.url,
 							"data-animate": results[i].images.fixed_height.url,
-							//"data-state": "still",
+							"data-state": "still",
 
 						});
 
@@ -40,7 +40,8 @@ function displayInfo (){
 							}
 						
 						}
-		$('pause').on("click", function(){
+		// This on click function animates still gifs and vice-versa. 				
+		$(".gifImage").on("click", function(){
 				var state = $(this).attr('data-state');
 					if (state == 'still'){
 						$(this).attr('src', $(this).data('animate'));
@@ -70,9 +71,9 @@ function renderButtons(){
 		}
 
 }
-
+// Adding New Emo-tion to index. 
 $('#addEmo').on('click', function(){
-		var emo = $("emo-input").val().trim();
+		var emo = $("#emo-input").val().trim();
 		emotions.push(emo);
 		renderButtons();
 		return false;
@@ -84,8 +85,5 @@ $(document).on('click', '.emo' , displayInfo);
 renderButtons();
 
 
-// fix pause function 
-// fix add Emo function 
-// add pagination/pager nav ? 
 
 

@@ -18,15 +18,19 @@ h3 {
 	font-size: 28px;
 
 }
+ 
+button.emo {
+	font-family: 'Metrophobic', sans-serif;
+}
 
-/**** fix font... */ 
-button.emo, input#addEmo, label{
-	font-family: font-family: 'Metrophobic', sans-serif;
+label {
+	font-family: 'Metrophobic', sans-serif;
 }
 
 #addEmo {
 	padding: 8px;
 	font-size: 22px;
+	font-family: 'Metrophobic', sans-serif;
 }
 
 .container {
