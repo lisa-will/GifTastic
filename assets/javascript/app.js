@@ -26,10 +26,10 @@ function displayInfo (){
 
 						var emoImage = $('<img>');
 						emoImage.attr({
-							src: results[i].images.fixed_height_still.url,
-							"data-still": results[i].images.fixed_height_still.url,
+							src: results[i].images.fixed_height.url,
+							//"data-still": results[i].images.fixed_height_still.url,
 							"data-animate": results[i].images.fixed_height.url,
-							"data-state": "still",
+							//"data-state": "still",
 
 						});
 
@@ -84,5 +84,8 @@ $(document).on('click', '.emo' , displayInfo);
 renderButtons();
 
 
+// fix pause function 
+// fix add Emo function 
+// add pagination/pager nav ? 
 
 
