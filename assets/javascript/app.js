@@ -5,7 +5,7 @@ var emotions = ["Happy", "Sad", "Sassy", "Hangry", "Frustrated", "Loved", "Excit
 function displayInfo (){
 		$('emoView').empty();
 		var emo = $(this).attr("data-name");
-		var api = "http://api.giphy.com/v1/gifs/search?q=" + emo + "&api_key=dc6zaTOxFJmzC&limit=10";
+		var api = "https://api.giphy.com/v1/gifs/search?q=" + emo + "&api_key=dc6zaTOxFJmzC&limit=10";
 
 		$.ajax({
 				url: api,
